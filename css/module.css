@@ -1,0 +1,134 @@
+/**/
+.alert {
+  padding: 20px;
+  color: white;
+  margin-bottom: 15px;
+  border-radius: 3px;
+}
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+/*scrtch*/
+		.card {
+			width:400px;
+			height:300px;
+      padding:1px;
+			position: relative;
+			margin: 10px auto;
+      border:transparent;
+      background-color: grey;
+      border: 1px solid #ffb607;
+		}
+
+		#scratch {
+      cursor: default;
+      height:100%;;
+      width:100%;
+      padding:0px;
+			margin:0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			cursor: grabbing;
+
+    }
+		.base {
+      cursor: default;
+      height:100%;;
+      width:100%;
+			padding:0;
+			margin:0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			cursor: grabbing;
+			text-align: center;
+		}
+
+		#scratch {
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+    }
+    
+/*popup forms*/
+.backdrop ,.backdrop1 {
+  user-select: none;
+  display:none;
+  position: fixed;
+  width: 100%;
+  height:100%;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.08);
+  z-index:1500;
+}
+.popup {
+  margin:auto;
+  padding:1%;
+  box-shadow:0 0 20px 3px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  z-index:1501;
+}
+.close-popup {
+   display:flex; 
+}
+.popup > .h {
+  width:95%;
+  margin:1% 2.5%;
+  height:fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup > .h > h6{
+  margin:auto 2.5%;
+  height:fit-content;
+}
+.popup > .h > span {
+  font-size:30px;
+  margin:auto 2.5%;
+}
+
+/*form*/
+.backdrop1 > .popup {
+  width:95%;
+  margin:auto;
+  max-width: 500px;
+}
+.backdrop1 > .popup > form { 
+  width:90%;
+  padding:2.5%;
+  margin: auto;
+}
+
+.backdrop1 > .popup > form > input {
+  width:100%;
+  padding:1% 2%;
+  margin:10px 0;
+  border:1px solid #eee;
+  color: #ffb607;
+  font-size: 0.9rem;
+  border-radius:5px;
+}
+.backdrop1 > .popup > form > input::placeholder {
+  color:grey;
+}
+
+.backdrop1 > .popup > form > button {
+  width:100%;
+  padding:1% 2%;
+  margin:10px 0;
+  border:1px solid #eee;
+  background-color: #ffb607;
+  border-radius:5px;
+}
